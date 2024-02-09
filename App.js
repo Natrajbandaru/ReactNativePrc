@@ -34,7 +34,7 @@ export default function App(){
          <Image source={"./assets/favicon.png"}
            style={styles.image}
          />
-         <Text style={styles.label}>UserName</Text>
+         <Text style={styles.label}>UserNames</Text>
          <TextInput placeholder="Enter UserName"
           style={styles.input}
           value={userName}
