@@ -25,7 +25,7 @@ export default function App(){
         SetErrors({})
       }
    }
-
+  //Natraj
    return( 
     <KeyboardAvoidingView styles={styles.container}
       keyboardVerticalOffset={100}
