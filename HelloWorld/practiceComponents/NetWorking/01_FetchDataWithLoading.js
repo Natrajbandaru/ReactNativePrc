@@ -4,11 +4,7 @@ import { useState,useEffect } from "react";
 export default function App(){
    const[postList, setPostList]= useState([]);
    const[loading,setLoading]= useState(true);
-   const[refresh,setRefresh]= useState(false);
-
-   
-
-  const  fetchData = async (limit)=>{
+  const  fetchData = async ({limit=10})=>{
       const response = await fetch(
         `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
       );
@@ -17,12 +13,6 @@ export default function App(){
       setPostList(data);
       setLoading(false);
   }
-  const handleRefresh=()=>{
-    setRefresh(true);
-    fetchData(20);
-    setRefresh(false);
-  }
-  
   useEffect(()=>{
     fetchData(10);
   },[])
@@ -41,8 +31,6 @@ export default function App(){
               keyExtractor={(item,index)=>item.id.toString()}
              // keyExtractor={(item,index)=>item.id.toString()}
               ItemSeparatorComponent={<View style={{height:1}}></View>}
-              refreshing={refresh}
-              onRefresh={handleRefresh}
               renderItem={({item})=>{
                   return(
                     <View style={styles.viewContainer}>
