@@ -9,11 +9,11 @@ export default function App(){
    
 
   const  fetchData = async (limit)=>{
+      setLoading(true);
       const response = await fetch(
         `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
       );
       const data =await response.json();
-      console.log(data)
       setPostList(data);
       setLoading(false);
   }
@@ -39,8 +39,8 @@ export default function App(){
        <View style={styles.listContainer}>
           <FlatList data={postList}
               keyExtractor={(item,index)=>item.id.toString()}
-             // keyExtractor={(item,index)=>item.id.toString()}
               ItemSeparatorComponent={<View style={{height:1}}></View>}
+              ListHeaderComponent={<Text>Hello</Text>}
               refreshing={refresh}
               onRefresh={handleRefresh}
               renderItem={({item})=>{
@@ -84,6 +84,8 @@ const styles=StyleSheet.create({
         justifyContent:"center",
         alignItems:"center"
     }
+
+  
 
 })
 
