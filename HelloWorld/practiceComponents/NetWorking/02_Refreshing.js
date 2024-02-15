@@ -58,7 +58,7 @@ export default function App(){
 }
 
 const styles=StyleSheet.create({
-  container:{
+    container:{
       flex:1,
       backgroundColor:"#f5f5f5",
       paddingTop:StatusBar.currentHeight
@@ -74,8 +74,7 @@ const styles=StyleSheet.create({
       borderRadius:5
     },
     viewTitle:{
-      fontSize:20,
-
+      fontSize:20
     },
     loadingContainer:{
         flex:1,
@@ -84,9 +83,6 @@ const styles=StyleSheet.create({
         justifyContent:"center",
         alignItems:"center"
     }
-
-  
-
 })
 
 

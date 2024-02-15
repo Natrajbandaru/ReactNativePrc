@@ -1,6 +1,14 @@
 Create Expo App:
 npx create-expo-app@latest FoodServiceApp
 
+PhotoSize:
+  25 Slider Carousel in Bootstrap | Bootstrap Tutorial for Beginners | Ui Brains | NAVEEN SAGGAM 
+  pexels.com
+        Note:  ALL Images should be same Hight and width
+        Sliders for    (For web and Phones): 1400 width and 500 height
+        Normal Images  (For web and Phones):  width 1200 to 1440   heigh : 500 to 800
+
+
 => Core Components In React 
    View         <div>
    ScrollView   <div>    (Used for Scrolling div)
