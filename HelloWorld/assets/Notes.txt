@@ -1,3 +1,6 @@
+Create Expo App:
+npx create-expo-app@latest FoodServiceApp
+
 => Core Components In React 
    View         <div>
    ScrollView   <div>    (Used for Scrolling div)
