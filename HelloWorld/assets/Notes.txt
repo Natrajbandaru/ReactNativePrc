@@ -168,6 +168,8 @@ PhotoSize:
             }
     -> SafeAreaView (Removeing Bar in above)
 
+    ->StatusBar (Used to get Hight and width of statusBar)
+
 ->Styleing In ReactNative
    React Native DoesNot use CssStyleing
    Names are Written as CamelCase
